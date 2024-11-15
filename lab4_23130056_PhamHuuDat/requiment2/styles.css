@@ -1,0 +1,111 @@
+/* Thiết lập chung */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.header a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Khóa học */
+.course-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+.course-item {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.course-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.course-info {
+    margin-top: 10px;
+}
+
+.course-info h3 {
+    margin: 5px 0;
+    overflow: hidden;                   /* Ẩn nội dung thừa */
+    text-overflow: ellipsis;            /* Thêm dấu "..." nếu vượt quá dòng */
+    max-width: 250px;                   /* Giới hạn chiều rộng */
+}
+.course-info p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+/* Thông tin người dùng */
+.user-info {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-info i {
+    font-size: 100px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.user-info h1 {
+    margin: 10px 0;
+}
+
+.user-info h4 {
+    margin: 5px 0;
+    color: gray;
+}
+
+.user-info button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.user-info button:hover {
+    background-color: #333;
+}
+.course-info i{
+    color: rgb(226, 226, 23);
+}
+.course-info .star{
+    color: rgb(199, 199, 39);
+}
+.danhgia{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.danhgia .rate_num{
+    padding-top: 11px;
+}

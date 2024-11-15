@@ -1,0 +1,69 @@
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    background-image: url('anh2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0;/* Remove default margin */
+    flex-direction: column;
+    
+}
+
+.container {
+    width: 80%; /* Set a width */
+    max-width: 600px; /* Optional: max width */
+    height: 300px;
+}
+.a1{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#title{
+    text-align: center;
+}
+input[type="text"],
+select {
+    flex-grow: 1; /* Cho phép input và select mở rộng */
+    margin-left: 10px; /* Thêm khoảng cách giữa label và input/select */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+label{
+    font-size: 17px;
+    padding-top: 9px;
+}
+.btn{
+    font-size: 17px;
+    border: 3px solid rgb(29, 29, 180);
+    border-radius: 10px;
+    padding: 3px;
+    background-color: rgb(95, 102, 235);
+}
+.details {
+    border: 2px solid #4CAF50; /* Màu xanh cho đường viền */
+    border-radius: 10px; /* Bo góc */
+    padding: 15px; /* Khoảng cách bên trong */
+    margin-top: 20px; /* Khoảng cách với phần tử phía trên */
+    background-color: rgba(255, 255, 255, 0.9); /* Nền màu trắng với độ trong suốt */
+}
+
+.details h2 {
+    text-align: center; /* Căn giữa tiêu đề */
+    color: #333; /* Màu tiêu đề */
+}
+
+.details p {
+    font-size: 16px; /* Kích thước chữ cho nội dung */
+    margin: 5px 0; /* Khoảng cách giữa các đoạn */
+}

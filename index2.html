@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div id="title">
+            <h1>Course Management</h1>
+        </div>
+        <div class="a1">
+            <label for="choseID">CourseID</label>
+            <select id="role" required>
+                <option value="">Chose your code id</option>
+                <option value="khoahoc1">Ielts1</option>
+                <option value="khoahoc2">Ielts2</option>
+                <option value="khoahoc3">Ielts3</option>
+                <option value="khoahoc4">Ielts4</option>
+                <option value="khoahoc5">Ielts5</option>
+                <option value="khoahoc6">Ielts6</option>
+                <!-- Add more roles as needed -->
+            </select>
+        </div>
+        <div class="a1">
+            <label for="Chose_Course_Name">Course Name <span style="color: red; font-weight: bold;">*</span></label>
+            <input type="text" placeholder="Enter course name">
+        </div>
+        <div class="a1" id="b1">
+            <label for="course_decription">Course Decription</label>
+            <input type="text" placeholder="This is Course Decription part after you chose(you dont need to care)">
+        </div>
+        <div class="a1">
+            <label for="instructor">Instructor</label>
+                <select id="role" required>
+                    <option value="">Select Instructor</option>
+                    <option value="instructor1">Instructor1</option>
+                    <option value="instructor2">Instructor2</option>
+                    <!-- Add more roles as needed -->
+                </select>
+        </div>
+        <div class="a1">
+            <div class="btn">Save Course</div>
+            <div class="btn">Delete Course</div>
+        </div>
+        
+    </div>
+    <!-- Div để hiển thị thông tin khóa học -->
+    <div class="details" id="courseDetails">
+        <h2>Details</h2>
+        <p><strong>Course ID:</strong> Choose your code id</p>
+        <p><strong>Course Name:</strong> Enter course name</p>
+        <p><strong>Course Description:</strong> This is Course Description part after you chose (you don't need to care)</p>
+        <p><strong>Instructor:</strong> Select Instructor</p>
+    </div>
+
+</body>
+</html>

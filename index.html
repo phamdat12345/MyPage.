@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPage</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>
+        <div class="logo">MyPage</div>
+        <nav>
+            <ul>
+                <li><a href="#home"><strong>Home</strong></a></li>
+                <li><a href="#about"><strong>About</strong></a></li>
+                <li><a href="#labs"><strong>Labs</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to MyPage</h1>
+            <p>Trang web này là nơi tôi lưu trữ tất cả bài tập và dự án của mình. Hãy khám phá và trải nghiệm!</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/6-anh-dai-dien-trang-inkythuatso-03-15-26-36.jpg" alt="Ảnh của tôi">
+            <div class="about-details">
+                <p><strong>Tên:</strong>Dat Pham</p>
+                <p><strong>MSSV:</strong>23130056</p>
+                <p><strong>Email:</strong> 23130056@st.hcmuaf.edu.vn</p>
+                <p><strong>Học vấn:</strong> Đại học NLU- Khoa Công nghệ Thông tin</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="labs" class="section">
+        <h2>Labs</h2>
+        <div class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'Lab1')">Lab 1</button>
+            <button class="tablinks" onclick="openTab(event, 'Lab2')">Lab 2</button>
+            <button class="tablinks" onclick="openTab(event, 'Lab3')">Lab 3_Login</button>
+            <button class="tablinks" onclick="openTab(event, 'Lab3_2')">Lab 3</button>
+            <button class="tablinks" onclick="openTab(event, 'Lab4_choseSub')">Lab4_choseSub</button>
+            <button class="tablinks" onclick="openTab(event, 'Lab4_lesson')">Lab4_lesson</button>
+            <button class="tablinks" onclick="openTab(event, 'Req1')">Requiment1</button>
+            <button class="tablinks" onclick="openTab(event, 'Req2')">Requiment2</button>
+            <button class="tablinks" onclick="openTab(event, 'Req3')">Requiment3</button>
+            <button class="tablinks" onclick="openTab(event, 'Req5')">Requiment3,4,5</button>
+            <button class="tablinks" onclick="openTab(event, 'lab6_req8')">Lab6_req8</button>
+            <button class="tablinks" onclick="openTab(event, 'lab6_req5,6')">Lab6_req5,6</button>
+            <button class="tablinks" onclick="openTab(event, 'lab6_req7')">Lab6_req7</button>
+        </div>
+
+        <div id="Lab1" class="tabcontent">
+            <iframe src="index1.html"></iframe>
+        </div>
+        <div id="Lab2" class="tabcontent">
+            <iframe src="index2.html"></iframe>
+        </div>
+        <div id="Lab3" class="tabcontent">
+            <iframe src="index3.html"></iframe>
+        </div>
+        <div id="Lab3_2" class="tabcontent">
+            <iframe src="index4.html"></iframe>
+        </div>
+        <div id="Lab4_choseSub" class="tabcontent">
+            <iframe src="23130056_PhamHuuDat_Lab3/part_1/index.html"></iframe>
+        </div>
+        <div id="Lab4_lesson" class="tabcontent">
+            <iframe src="23130056_PhamHuuDat_Lab3/part_2_after_click_history/index2.html"></iframe>
+        </div>
+
+
+
+        <div id="Req1" class="tabcontent">
+            <iframe src="lab4_23130056_PhamHuuDat/requiment1/index.html"></iframe>
+        </div>
+        <div id="Req2" class="tabcontent">
+            <iframe src="lab4_23130056_PhamHuuDat/requiment2/index.html"></iframe>
+        </div>
+        <div id="Req3" class="tabcontent">
+            <iframe src="lab4_23130056_PhamHuuDat/requiment3_and_4/index.html"></iframe>
+        </div>
+        <div id="Req5" class="tabcontent">
+            <iframe src="lab5_23130056_PhamHuuDat/index.html"></iframe>
+        </div>
+        <div id="lab6_req8" class="tabcontent">
+            <iframe src="lab6_23130056_PhamHuuDat/first_page/index.html"></iframe>
+        </div>
+        <div id="lab6_req5,6" class="tabcontent">
+            <iframe src="lab6_23130056_PhamHuuDat/second_page/index.html"></iframe>
+        </div>
+        <div id="lab6_req7" class="tabcontent">
+            <iframe src="lab6_23130056_PhamHuuDat/third_page/index.html"></iframe>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

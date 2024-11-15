@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+#header{
+    color: azure;
+    background-color:rgb(76.64, 77.88, 81.12);
+}
+.title{
+    margin-left: 15px;
+    padding-top: 3px;
+}
+.hours_and_views{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    gap: 10px;
+}
+.menu_tabs{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-left: 15px;
+    padding-bottom: 7px;  
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold; 
+    font-size: 17px;
+}
+.icon-container {
+    background-color:rgb(76.64, 77.88, 81.12);
+    border-radius: 50%;      /* Hình tròn */
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid white; /* Viền trắng */
+    margin-top: 14px;
+}
+
+.icon {
+    color: white; /* Dấu chấm than trắng */
+    font-size: 13px;
+}
+.link_view{
+    padding-top: 15px;
+}
+.link_view a{
+    color: white;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+.link_view a:hover{
+    color: rgb(147, 212, 212);
+}
+.tab:hover {
+    color: #c1d0dd; 
+}
+.tab::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px; /* Độ dày của gạch chân */
+    background-color: #ffffff; /* Màu sắc của gạch chân */
+    position: absolute;
+    left: 0px;
+    bottom: -7px; /* Khoảng cách từ tab đến gạch chân */
+    transform: scaleX(0); /* Bắt đầu với gạch chân không hiển thị */
+    transition: transform 0.3s ease;/* Hiệu ứng chuyển tiếp */
+}
+.tab:hover::after {
+    transform: scaleX(1); 
+}
+.tab{
+    position: relative; 
+    cursor: pointer;
+}
+.title2_and_icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 27px 12px 15px;
+}
+#content1{
+    margin: 15px 30px 2cm 15px;
+}
+.icon_growup{
+    transform: rotate(90deg);
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+.youhave_and_import{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+    
+}
+.icon-container2 {
+    background-color:rgb(255, 255, 255);
+    border-radius: 50%;      /* Hình tròn */
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid black; /* Viền trắng */
+    margin-top: 14px;
+    margin-top: 2px;
+}
+
+.icon2 {
+    color: black; /* Dấu chấm than trắng */
+    font-size: 13px;
+}
+.youhave{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 30px 12px 15px;
+    margin-top: 20px;
+    gap: 10px;
+}
+.intro4 p{
+    margin-top: 0;
+}
+.import button{
+    height: 50px;
+    color: #ffffff;
+    background-color: rgb(135, 90, 218);
+    width: 5.8cm;
+    font-size: 15px;
+}
+.subscribe p{
+    margin-top: 0;
+}
+.subscribe{
+    padding-right: 250px;
+    padding-left: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+#main{
+    border-top: 2px solid rgba(53, 53, 53, 0.2);
+    border-bottom: 2px solid rgba(53, 53, 53, 0.2);
+    margin-top: 40px;
+}
+.title3_and_icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 28px 0px 17px;
+}
+#main2{
+    font-family: 'Nunito', sans-serif;
+}
+.youhave2{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.youhave_and_explore{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px 0px 17px;
+}
+.icon_warning{
+    margin-top: 15px;
+}
+.explore button{
+    width: 8cm;
+    padding: 10px;
+    border: 2px solid rgba(53, 53, 53, 0.6);
+    font-weight: bold;
+    background-color: #ffffff;
+}
+#main3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.disk_list{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.disk{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgba(53, 53, 53, 0.2);
+    margin-left: 15px;
+    padding: 10px;
+    transition: transform 0.5s ease;
+}
+.title4{
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+.what_disk_category p{
+    margin: 0;
+}
+.what_disk_category{
+    margin-top: 25px;
+}
+.img img{
+    width: 200px;
+    margin: 50px;
+    margin: 0;
+}
+.chamthan a:hover{
+    background-color: rgb(147, 212, 212); 
+}
+.import button:hover{
+    background-color: rgb(128, 86, 205);
+}
+.explore button:hover{
+    background-color: rgb(245, 233, 233);
+}
+.disk:hover {
+    transform: scale(1.1); /* Tăng kích thước khi di chuột */
+}
+#content2{
+    margin: 30px 1cm 0px 0.8cm;
+    display: grid !important;
+    grid-template-columns: repeat(4, 19vw);
+    row-gap: 1.5cm;
+    column-gap: 2.5cm;
+}
+.img_and_button {
+    position: relative; 
+    overflow: hidden; /* Chặn nội dung tràn ra ngoài ảnh */
+    width: 100%; /* Chiều rộng cố định của ảnh */
+    height: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.img_and_button img {
+    width: 100%; /* Ảnh tự động chiếm toàn bộ khung */
+    height: 100%; 
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+.button_on_img{
+    position: absolute;
+    top: 10%; /* Căn giữa theo chiều dọc */
+    left: 72%; /* Căn giữa theo chiều ngang */
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff;
+    border: 3px solid #ffffff;
+}
+.csr h2{
+    font-size: 18px;
+}
+.csr{
+    padding: 3px 5px 0px 5px;
+}
+.fsoft{
+    padding: 0px 0px 0px 5px;
+    color: rgb(103, 110, 117);
+    font-family: 'Nunito', sans-serif;
+}
+.fsoft p{
+    margin-bottom: 5px;
+}
+.thanhdanhgia{
+    background-color: red;
+    margin: 0px 0px 15px 5px;
+    height: 2px;
+}
+.rating{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px 0px 5px;
+}
+.your_rating p{
+    margin-top: 3px;
+    float: right;
+}
+.archived{
+    margin-bottom: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+}
+.archived:hover {
+    transform: scale(1.1); /* Tăng kích thước khi di chuột */
+}
+.star_rating{
+    color: rgb(163, 163, 9);
+}
+.out{
+    text-decoration: none;
+    color: black;
+}
+.archived button:hover{
+    background-color: aliceblue;
+}
+#content3{
+    margin: 2cm;
+    font-family: 'Nunito', sans-serif;
+}
+.grid_2{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50% 50%;
+}
+.tools1{
+    border: 2px solid #d9dadb;
+    display: grid;
+    grid-template-columns: 20% 70%;
+}
+.description{
+    width: 60%;
+}
+.description p{
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+.icon3{
+    font-size: 6vw;
+}
+.title5{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.p1{
+    font-size: 15px; 
+    color: rgb(135, 135, 135);
+}
+.p2{
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-top: 7px; 
+    margin-bottom: 7px;
+}
+.link2{
+    font-size: 18px; 
+    color: rgb(28, 37, 200);
+    padding-bottom: 20px;
+}
+.title5 h2{
+    margin-bottom: 0;
+}
+.p1 p{
+    margin-top: 3px;
+}
+.title_and_beta{
+    display: grid;
+    grid-template-columns: 30% 10%;
+    margin-top: 20px;
+}
+.tab-content {
+    display: none; /* Ẩn tất cả nội dung ban đầu */
+}
+.tab-content.active {
+    display: block; /* Hiện nội dung của tab đang được chọn */
+}

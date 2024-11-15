@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Create Account</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Account</h1>
+        <form id="accountForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username." maxlength="255" required>
+                <span class="error" id="usernameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password." maxlength="255" required>
+                <button type="button" id="togglePassword">Show</button>
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email." maxlength="255" required>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="fullName">Full Name (optional)</label>
+                <input type="text" id="fullName" placeholder="Enter your full name." maxlength="255">
+            </div>
+
+            <div class="form-group">
+                <label for="role">Role</label>
+                <select id="role" required>
+                    <option value="">Select a role</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <!-- Add more roles as needed -->
+                </select>
+                <span class="error" id="roleError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="profilePicture">Profile Picture</label>
+                <input type="file" id="profilePicture" accept="image/*">
+                <input type="url" id="profileUrl" placeholder="Or enter image URL">
+                <div id="imagePreview"></div>   
+                <span class="error" id="profileError"></span>
+            </div>
+<!--
+            <div class="form-group">
+                <label>Account Created At</label>
+                <span id="accountCreatedAt"></span>
+            </div>
+            <div class="form-group">
+                <label>Last Updated At</label>
+                <span id="lastUpdatedAt"></span>
+            </div>
+-->
+            <button type="submit" id="submitButton" disabled>Create Account</button>
+            <button type="button" id="cancelButton">Cancel</button>
+        </form>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

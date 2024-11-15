@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+#header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(36, 31, 31);
+    color: antiquewhite;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    height: 56px;
+}
+#head1{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-left: 15px;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    border-right: 1px solid white;
+    
+}
+#head2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-right: 20px;
+}
+.back {
+    padding: 16px 6px 0px 10px;
+}
+.icon_home{
+    margin-right: 10px;
+    
+}
+.intro{
+    margin-left: 10px;
+}
+.rate{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.leave_a_rating{
+    margin-top: 2px;
+}
+.star{
+    margin-top: 9px;
+}
+.select{
+    display: flex;
+    flex-direction: row;
+}
+.cup p{
+    margin-top: 8px;
+}
+#your_progress{
+    margin-top: 18px;
+    color: white;
+    background-color: rgb(76, 66, 66);
+}
+#share{
+    margin-top: 18px;
+    color: white;
+    background-color: rgb(76, 66, 66);
+    border: 2px solid white;
+}
+button{
+    margin-top: 15px;
+    color: white;
+    background-color: rgb(76, 66, 66);
+    border: 2px solid white;
+}
+#sourse{
+    width: 40%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.selected{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(237, 241, 245);
+    margin-bottom: 3px;
+    border-radius: 10px;
+    position: relative; 
+    z-index: 1;
+    font-weight: bold;
+    font-size: 15px;
+}
+.selected option{
+    height: 30px;
+    line-height: 30px;
+}
+.tab-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#menu_tabs{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-family: 'Nunito', sans-serif;
+    border-bottom: 2px solid black;
+    width: 58%;
+    margin-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+}
+.tab:hover {
+    color: #007BFF; /* Đổi màu chữ khi hover */
+}
+.tab::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px; /* Độ dày của gạch chân */
+    background-color: #1c1f23; /* Màu sắc của gạch chân */
+    position: absolute;
+    left: 0px;
+    bottom: -5px; /* Khoảng cách từ tab đến gạch chân */
+    transform: scaleX(0); /* Bắt đầu với gạch chân không hiển thị */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển tiếp */
+}
+
+.tab:hover::after {
+    transform: scaleX(1); 
+}
+.tab{
+    position: relative; 
+    cursor: pointer;
+}
+.intro2{
+    font-family: 'Nunito', sans-serif;
+    padding: 0px 5px 0px 30px;
+}
+.rate_and_star{
+    display: flex;
+    flex-direction: row;
+}
+.rate2{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-left: 33px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.star2 span{
+    margin-bottom: 10px;
+}
+.number_of_rate{
+    padding-top: 7px;
+}
+.num p{
+    margin: 0;
+}
+.number_of_rate p{
+    margin-top: 7px;
+}
+.time p{
+    font-family: 'Nunito', sans-serif;
+    padding-left: 32px;
+    margin: 0;
+}
+.english{
+    font-family: 'Nunito', sans-serif;
+}
+.icon_2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.english p{
+    margin: 0;
+}
+.container{
+    width: 59%;
+    border: 3px solid rgba(53, 53, 53, 0.2);
+    margin-top: 20px;
+}
+.infor{
+    display: flex;
+    flex-direction: row;
+}
+.infor_mation{
+    flex: 1;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.main p{
+    margin: 0px 0px 15px 15px;
+}
+.head3 h1{
+    margin-left: 20px;
+}

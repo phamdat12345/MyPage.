@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebarInner" id="sidebarInner">
+            <div class="education_Level">
+                <div class="title_incontainer">
+                    <h1>Education Level</h1>
+                </div>
+                <div class="select">
+                    <div class="select_1">
+                        <div class="input"><input type="checkbox" value="college" onclick="myfunction1()"></div>
+                        <div class="chose_class"><p>College</p></div>
+                    </div>
+                    <div class="select_1">
+                        <div class="input"><input type="checkbox" value="high-school" onclick="myfunction1()"></div>
+                        <div class="chose_class"><p>High-School</p></div>
+                    </div>
+                    <div class="select_1">
+                        <div class="input"><input type="checkbox" value="mid-school" onclick="myfunction1()"></div>
+                        <div class="chose_class"><p>Middle-School</p></div>
+                    </div>
+                    <div class="select_1">
+                        <div class="input"><input type="checkbox" value="kid-school" onclick="myfunction1()"></div>
+                        <div class="chose_class"><p>Kid-School</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subjects">
+                <div class="title_incontainer">
+                    <h1>Subjects</h1>
+                </div>
+                <div class="select3">
+                    <div class="select2">
+                        <div class="box2"><input type="checkbox" value="vn" onclick="myfunction()"></div>
+                        <div class="chose_class2"><p>Viet Nam History (12)</p></div>
+                    </div>
+                    <div class="select2">
+                        <div class="box2"><input type="checkbox" value="math12" onclick="myfunction()"></div>
+                        <div class="chose_class2"><p>Math (12)</p></div>
+                    </div>
+                    <div class="select2">
+                        <div class="box2"><input type="checkbox" value="math6" onclick="myfunction()"></div>
+                        <div class="chose_class2"><p>Toán (6)</p></div>
+                    </div>
+                    <div class="select2">
+                        <div class="box2"><input type="checkbox" value="van9" onclick="myfunction()"></div>
+                        <div class="chose_class2"><p>Ngữ văn (9)</p></div>
+                    </div>
+                    <div class="select2">
+                        <div class="box2"><input type="checkbox" value="java" onclick="myfunction()"></div>
+                        <div class="chose_class2"><p>Java</p></div>
+                    </div>
+                    <div class="select2">
+                        <div class="box2"><input type="checkbox" value="python" onclick="myfunction()"></div>
+                        <div class="chose_class2"><p>Python basic</p></div>
+                    </div>
+                    <div class="select2">
+                        <div class="box2"><input type="checkbox" value="toan3" onclick="myfunction()"> </div>
+                        <div class="chose_class2"><p>Toán (3)</p></div>
+                    </div>
+                    <div class="select2">
+                        <div class="box2"><input type="checkbox" value="tiengviet3" onclick="myfunction()"></div>
+                        <div class="chose_class2"><p>Tiếng Việt (3)</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_inner" id="main_inner">
+            <div class="total_courses">
+                <div id="total_courses">
+                    <h1>Courses:</h1>
+                </div>
+            </div>
+
+            <div class="total_lessons">
+                <div class="lesson_1">
+                    <div class="sub_container" data-subject="Viet Nam History (12)" id="demo">
+                        <div>
+                            <img src="https://hieusach24h.com/wp-content/uploads/2021/09/Lich-su-12.jpg" alt="">
+                        </div>
+                        <div><h2>Viet Nam History (12)</h2></div>
+                        <div class="view_Lesson">
+                            <button>View Lessons</button>
+                        </div>
+                    </div>
+
+                    <div class="sub_container" data-subject="Math (12)" id="demo">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPf1iodlpzAFF_aCDRMOPxgCLV78GHo7mOtg&s" alt="">
+                        </div>
+                        <div><h2>Math (12)</h2></div>
+                        <div class="view_Lesson">
+                            <button>View Lessons</button>
+                        </div>
+                    </div>
+
+                    <div class="sub_container" data-subject="Toán (6)">
+                        <div>
+                            <img src="data:image/jpeg;base64,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" alt="">
+                        </div>
+                        <div><h2>Toán (6)</h2></div>
+                        <div class="view_Lesson">
+                            <button>View Lessons</button>
+                        </div>
+                    </div>
+
+                    <div class="sub_container" data-subject="Ngữ văn (9)" id="demo">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXp-7gIut4GsricSgsgBXHSsZSd2p7din7zw&s" alt="">
+                        </div>
+                        <div><h2>Ngữ văn (9)</h2></div>
+                        <div class="view_Lesson">
+                            <button>View Lessons</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson_2">
+                    <div class="sub_container" data-subject="Java" id="demo">
+                        <div>
+                            <img src="https://m.media-amazon.com/images/I/819TQgUGNsL._AC_UF1000,1000_QL80_.jpg" alt="">
+                        </div>
+                        <div><h2>Java</h2></div>
+                        <div class="view_Lesson">
+                            <button>View Lessons</button>
+                        </div>
+                    </div>
+
+                    <div class="sub_container" data-subject="Python basic" id="demo">
+                        <div>
+                            <img src="https://salt.tikicdn.com/cache/w1200/ts/product/38/40/88/b962e19641b05c06324b416c6aa5d38b.jpg" alt="">
+                        </div>
+                        <div><h2>Python basic</h2></div>
+                        <div class="view_Lesson">
+                            <button>View Lessons</button>
+                        </div>
+                    </div>
+
+                    <div class="sub_container" data-subject="Toán (3)" id="demo">
+                        <div>
+                            <img src="https://hieusach24h.com/wp-content/uploads/2021/09/Toan-3.jpg" alt="">
+                        </div>
+                        <div><h2>Toán (3)</h2></div>
+                        <div class="view_Lesson">
+                            <button>View Lessons</button>
+                        </div>
+                    </div>
+
+                    <div class="sub_container" data-subject="Tiếng Việt (3)" id="demo">
+                        <div>
+                            <img src="https://metaisach.com/wp-content/uploads/2019/01/sach-giao-khoa-tieng-viet-lop-3.jpg" alt="">
+                        </div>
+                        <div><h2>Tiếng Việt (3)</h2></div>
+                        <div class="view_Lesson">
+                            <button>View Lessons</button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="pagination_container">
+                <ul class="pagination">
+                    <li class="pagination1"><strong>Previous</strong></li>
+                    <li class="pagination2"><strong>1</strong></li>
+                    <li class="pagination3"><strong>2</strong></li>
+                    <li class="pagination4"><strong>3</strong></li>
+                    <li class="pagination5"><strong>... 16</strong></li>
+                    <li class="pagination6"><strong>Next</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

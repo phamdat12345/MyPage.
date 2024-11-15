@@ -1,0 +1,171 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 8px;
+    padding: 0;
+    background-color: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+
+.education_Level {
+    width: 300px;
+    padding-top: 3px;
+    padding-left: 7px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+}
+
+.select_1, .select2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+    padding-top: 15px;
+}
+
+.chose_class p, .chose_class2 p {
+    font-size: 17px;
+}
+
+.box2 {
+    padding-top: 14px;
+}
+
+.subjects {
+    padding-top: 3px;
+    padding-left: 7px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    width: 300px;
+    margin-top: 8px;
+}
+
+#sidebarInner {
+    width: 310px;
+    margin: 30px 0 0 100px;
+    height: 750px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.lesson_1, .lesson_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#main_inner {
+    width: 100%;
+    margin: 20px 100px 30px 15px;
+}
+
+.total_lessons {
+    min-height: 600px;
+    height: auto;
+}
+
+/* Thay đổi ở đây */
+.sub_container {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    flex-grow: 1; /* Đẩy phần pagination xuống cuối */
+    margin-right: 10px;
+}
+
+.sub_container img {
+    width: 200px;
+}
+
+.view_Lesson button {
+    width: 100%;
+    background-color: rgb(42, 190, 230);
+    border-radius: 5px;
+    color: aliceblue;
+    transition: background-color 0.3s;
+}
+
+.view_Lesson button:hover {
+    background-color: rgb(110, 210, 238);
+}
+
+.pagination {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    gap: 8px;
+    margin-top: auto; /* Đảm bảo phần pagination luôn nằm dưới cùng */
+}
+
+ul {
+    list-style-type: none;
+}
+
+.pagination_container {
+    padding: 10px;
+}
+
+.pagination1, 
+.pagination2, 
+.pagination3, 
+.pagination4, 
+.pagination5, 
+.pagination6 {
+    border-radius: 6px;
+    padding: 6px;
+    background-color: rgb(241, 240, 246);
+    color: rgb(199, 202, 204);
+}
+img {
+    height: 250px;
+    width: auto;
+    object-fit: cover; /* Giữ nguyên tỷ lệ ảnh */
+}
+/* Thiết kế cho màn hình nhỏ hơn 768px (điện thoại) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+        padding: 10px;
+    }
+
+    #sidebarInner {
+        width: 100%; /* Sidebar chiếm toàn bộ chiều rộng */
+        margin: 10px 0;
+    }
+
+    #main_inner {
+        margin: 10px;
+    }
+
+    .view_Lesson button {
+        font-size: 14px; /* Thu nhỏ chữ trên điện thoại */
+        padding: 12px;
+    }
+
+    img {
+        height: 200px; /* Thu nhỏ hình ảnh */
+    }
+}
+.sub_container:hover {
+    transform: translateY(-10px); /* Di chuyển lên trên một chút */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng mờ */
+}
+

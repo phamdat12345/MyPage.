@@ -1,0 +1,94 @@
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem; 
+}
+.container {
+    width: 80%; 
+    max-width: 450px; 
+    height: 500px;
+    text-align: center;
+}
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-image: url('23419-NUID1V.jpg');
+}
+h1{
+    font-size: 3vw;
+    color: black;
+}
+.enter_infor input{
+    width: 100%;
+    margin-top: 10px;
+    height: 25px;
+}
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.note{
+    display: flex;
+
+}
+.button_login button{
+    width: 100%;
+    margin-top: 12px;
+    height: 30px;
+}
+.button_login_face_twit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.difer_login button{
+    width: 200px;
+}
+.note p{
+    font-size: 13px;
+    color: white;
+}
+.linked p{
+    font-size: 13px;
+    color: white;
+}
+.button_login button{
+    background-color: #FF7F7F;
+    color: white;
+}
+#heavy_blue button{
+    background-color: rgba(24, 119, 242, 1);
+    height: 30px;
+    color: white;
+}
+#light_blue button{
+    background-color: rgba(29, 161, 242, 1);
+    height: 30px;
+    color: white;
+}
+.or p{
+    font-size: 15px;
+    color: black;
+}
+.footer p{
+    font-size: 13px;
+    color: black;
+}
+.button_login button:hover{
+    background-color: red;
+}
+#heavy_blue button:hover{
+    background-color: blue;
+}
+#light_blue button:hover{
+    background-color: rgb(59, 118, 226);
+}
+.linked p:hover{
+    color: rgb(209, 140, 49);
+}
+

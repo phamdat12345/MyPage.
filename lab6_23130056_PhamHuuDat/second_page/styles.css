@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(251, 251, 251);
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 1rem;
+}
+.iconkhoahoc {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    transition: transform 0.3s ease-in-out;
+    width: max-content;
+}
+.icon{
+    padding: 1.5rem;
+    background-color: rgba(218, 218, 218, 0.7);
+    border-radius: 3rem;
+}
+.icon_title h2{
+    margin: 0rem 0rem 0.2rem 0rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #282424;
+}
+.soluongnguoihoc p{
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(106, 106, 106, 0.7);
+}
+.iconkhoahoc{
+    margin: 1rem;
+}
+.next-btn, .back-btn {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(1, 1, 1);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.back-btn {
+    left: 10px;
+    display: none;
+}
+.next-btn:hover, .back-btn:hover{
+    background-color: black;
+    color: white;
+}
+.icon:hover {
+    background-color: #242222; 
+    transition: background-color 1s, color 1s;
+}
+.icon:hover .icon_title h2,
+.icon:hover .soluongnguoihoc p {
+    color: white; 
+    transition: color 0.3s;
+}
+.img{
+    width: 100%;
+}
+.img img{
+    width: 100%;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+}
+.tieudekhoahoc h2{
+    margin: 0.1rem 0rem 0.5rem 0rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #282424;
+}
+.songuoidangki p, .tien p{
+    margin: 0;
+}
+.infor{
+    padding-left: 1rem;
+}
+.tengiangvien{
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(74, 74, 74, 0.7);
+}
+.danhgia{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+.sodanhgia{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #282424;
+    font-weight: bold;
+    padding: 0.2rem 0rem 0rem 0rem;
+}
+.star{
+    color: rgb(167, 167, 10);
+}
+.songuoidangki p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(74, 74, 74, 0.7);
+}
+.giatien{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #282424;
+    font-weight: bold;
+}
+.d{
+    text-decoration: underline;
+}
+.bestseller p{
+    width: 4.3rem;
+    padding: 0.2rem;
+    background-color: rgb(195, 195, 31);
+}
+.cacloaikhoahoc{
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    margin: 1rem;
+}
+.cackhoahoc{
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease;
+    gap: 1rem;
+    margin-left: 1.5rem;
+}
+.khoahoc {
+    flex: 0 0 23%; 
+    border: 1px solid black;
+    border-radius: 0.7rem;
+    transition: transform 0.5s ease;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+}
+.next1-btn{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(1, 1, 1);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.back1-btn{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(1, 1, 1);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.next1-btn:hover, .back1-btn:hover{
+    background-color: black;
+    color: white;
+}
+.back1-btn {
+    left: 1rem;
+    display: none;
+} 
+.show_on{
+    margin: 4rem 0rem 0rem 2.5rem;
+    padding: 1rem;
+    background-color: rgb(241, 241, 241);
+    width: 18rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #282424;
+    font-weight: bold;
+    border: 2px solid black;
+}  
+.show_on:hover{
+    background-color: rgb(84, 84, 84);
+    color: white;
+    transition: background-color 0.5s, color 0.5s, ease-in-out 0.3s;
+    transform: scale(1.05);
+}
+.arrow {
+    position: absolute;
+    top: 5rem; /* Vị trí mũi tên theo chiều dọc */
+    left: -10px; /* Đưa mũi tên ra khỏi phần mô tả về bên trái */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #ffffff; /* Cùng màu với phần mô tả */
+}
+.description {
+    display: none; /* Ẩn phần mô tả mặc định */
+    position: absolute; /* Định vị tuyệt đối để nó có thể xuất hiện bên phải thẻ khóa học */
+    top: 0;
+    left: 100%; /* Đặt bên phải của thẻ khóa học */
+    width: 25rem;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    z-index: 1000;
+    margin-left: 1.5rem;
+}
+.tieudecuamota{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #282424;
+    font-weight: bold;
+}
+.update p{
+    color: green;
+}
+.thongso p{
+    font-size: 0.9rem;
+    color: rgba(74, 74, 74, 0.7);
+    font-weight: bold;
+}
+.dautickvathongso{
+    font-weight: bold;
+}
+.addToCart{
+    text-align: center;
+    background-color: rgb(98, 43, 161);
+    padding: 1rem 0rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.addToCart:hover{
+    background-color: rgb(135, 80, 199);
+    transform: scale(1.05); /* Phóng to nhẹ */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+.icon:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 0.3s;
+}
+@media (max-width: 768px){
+    .khoahoc{
+        
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chia sẻ tài liệu học tập</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="subject">
+        <h3>Lịch Sử</h3>
+        <button class="doc-btn" onclick="loadDocument('https://hoc247.net/lich-su-12/bai-1-su-hinh-thanh-trat-tu-the-gioi-moi-sau-chien-tranh-the-gioi-thu-hai-1945-1949--l2230.html')">Bài 1:Sự hình thành trât tự thế giới mới sau Chiến tranh thế giới thứ hai(1945-1949)</button>
+        <button class="doc-btn" onclick="loadDocument('https://hoc247.net/lich-su-12/bai-2-lien-xo-va-cac-nuoc-dong-au-1945-2000-lien-bang-nga-1991-2000--l2231.html')">Bài 2:Liên Xô và các nước Đông Âu (1945-1991). Liên bang Nga (1991-2000)</button>
+        <button class="doc-btn" onclick="loadDocument('https://hoc247.net/lich-su-12/bai-3-cac-nuoc-dong-bac-a-l2232.html')">Bài 3:Các nước Đông Bắc Á</button>
+        <button class="doc-btn" onclick="loadDocument('https://hoc247.net/lich-su-12/bai-4-cac-nuoc-dong-nam-a-va-an-do-l4256.html')">Bài 4:Các nước Dông Nam Á và Ấn Độ</button>
+        <button class="doc-btn" onclick="loadDocument('https://hoc247.net/lich-su-12/bai-5-cac-nuoc-chau-phi-va-mi-latinh-l4257.html')">Bài 5:Các nước Châu Phi và Mỹ Latinh</button>
+        <button class="doc-btn" onclick="loadDocument('https://hoc247.net/lich-su-12/bai-6-nuoc-mi-l2234.html')">Bài 6:Nước Mĩ</button>
+        <button class="doc-btn" onclick="loadDocument('https://hoc247.net/lich-su-12/bai-7-tay-au-l2235.html')">Bài 7:Tây Âu</button>
+        <button class="doc-btn" onclick="loadDocument('https://hoc247.net/lich-su-12/bai-8-nhat-ban-l2236.html')">Bài 8:Nhât Bản</button>
+        <button class="doc-btn" onclick="loadDocument('https://hoc247.net/lich-su-12/bai-9-quan-he-quoc-te-trong-va-sau-thoi-ki-chien-tranh-lanh-l2237.html')">Bài 9:Quan hê quốc tế trong và sau thời kì Chiến tranh lanh</button>
+        <button class="doc-btn" onclick="loadDocument('https://hoc247.net/lich-su-12/bai-10-cach-mang-khoa-hoc-cong-nghe-va-xu-huong-toan-cau-hoa-nua-sau-the-ki-xx-l2238.html')">Bài 10:Cách mang khoa học công nghê và xu thế toàn cầu hóa nửa sau thế kỉ XX</button>
+        <button class="doc-btn" onclick="loadDocument('https://hoc247.net/lich-su-12/bai-11-tong-ket-lich-su-the-gioi-hien-dai-tu-nam-1945-den-nam-2000-l2239.html')">Bài 11:Tổng kết lịch sử thế giới hiện đại từ năm 1945 đến năm 2000</button>
+
+      </div>
+    </div>
+
+    <div class="right">
+      <iframe id="documentFrame" src=""></iframe>
+    </div>
+  </div>
+
+  <script>
+    function loadDocument(url) {
+      document.getElementById('documentFrame').src = url;
+    }
+  </script>
+</body>
+</html>
