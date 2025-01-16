@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 /* Tổng thể */
 body {
     margin: 0;
@@ -14,8 +17,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    position: fixed;
-    width: 95%;
+    position: sticky;
+    width: 100%;
+    
 }
 
 header .logo {
@@ -48,7 +52,6 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero-section {
-    height: 100vh;
     background-image: url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -57,7 +60,12 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     color: white;
+    
 }
+.hero-content{
+    margin: 8rem;
+}
+
 
 .hero-content h1 {
     font-size: 50px;
@@ -74,8 +82,12 @@ nav ul li a:hover {
 .section {
     padding: 0;
 }
+.section h2{
+    margin: 0;
+}
 
 .about-container {
+    margin: 8rem;
     display: flex;
     gap: 30px;
     align-items: center;
@@ -95,9 +107,10 @@ nav ul li a:hover {
 .tabs {
     display: flex;
     justify-content: center;
+    margin: 30px 0;
     flex-wrap: wrap;
     gap: 9px;
-    margin: 30px 0;
+    margin: 8rem;
 }
 
 .tablinks {
@@ -131,4 +144,73 @@ iframe {
     font-weight: bold;
 }
 
+/* Chắc chắn rằng các section được ẩn sẽ không ảnh hưởng đến bố cục */
+section {
+    display: none; /* Ẩn tất cả các section mặc định */
+    padding: 20px;  /* Đảm bảo không có sự thay đổi không mong muốn về không gian */
+}
 
+/* Khi section được hiển thị, áp dụng display:block để nó trở thành phần tử khối */
+section:target {
+    display: block; 
+}
+.mb-4{
+    margin: 2rem;
+}
+
+.self-evaluation {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.self-evaluation p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1976d2;
+}
+
+.nav-tabs .nav-link {
+    background-color: #1976d2;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #1565c0;
+    color: white;
+    border-color: #1565c0;
+}
+
+.tab-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.tab-pane img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.tab-pane p a {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.tab-pane p a:hover {
+    text-decoration: underline;
+}
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
