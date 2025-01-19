@@ -13,6 +13,8 @@
             <ul>
                 <li><a href="#home"><strong>Home</strong></a></li>
                 <li><a href="#about"><strong>About</strong></a></li>
+                <li><a href="#requiment"><strong>Requiment</strong></a></li>
+                <li><a href="#design"><strong>Design</strong></a></li>
                 <li><a href="#labs"><strong>Labs</strong></a></li>
                 <li><a href="#result"><strong>Result</strong></a></li>
             </ul>
@@ -26,6 +28,8 @@
         </div>
     </section>
 
+
+
     <section id="about" class="section" style="display: none;">
         <h2>About Me</h2>
         <div class="about-container">
@@ -37,6 +41,250 @@
                 <p><strong>Học vấn:</strong> Đại học NLU- Khoa Công nghệ Thông tin</p>
             </div>
         </div>
+    </section>
+
+    <section id="requiment" class="section" style="display: none;">
+        <div class="menu">
+            <div class="tab" data-target="lab1">Lab1</div>
+            <div class="tab" data-target="lab2">Lab2</div>
+            <div class="tab" data-target="lab3">Lab3</div>
+            <div class="tab" data-target="lab4">Lab4</div>
+            <div class="tab" data-target="lab5">Lab5</div>
+            <div class="tab" data-target="lab6">Lab6</div>
+        </div>
+
+
+        <section id="lab1" class="section" style="display: none;">
+            <h1>User Interface Design Requirements</h1>
+    <ul>
+        <li>Text Input (Single-line)
+            <ul>
+                <li><strong>“Username”</strong></li>
+                <li>Must be unique, maximum 255 characters.</li>
+                <li>A text box with a hint (placeholder) like "Enter your username."</li>
+            </ul>
+        </li>
+        <li>Password Input (Single-line with hidden text)
+            <ul>
+                <li><strong>“Password”</strong></li>
+                <li>Minimum password strength check, maximum 255 characters.</li>
+                <li>A text box that hides the text input, with a “Show/Hide” toggle.</li>
+            </ul>
+        </li>
+        <li>Email Input
+            <ul>
+                <li><strong>“Email Address”</strong></li>
+                <li>Must be a valid email format and unique, maximum 255 characters.</li>
+                <li>A text box with a placeholder like "Enter your email."</li>
+            </ul>
+        </li>
+        <li>(Optional) Text Input (Single-line)
+            <ul>
+                <li><strong>“Full Name”</strong> (optional)</li>
+                <li>A regular text box, with a placeholder like "Enter your full name."</li>
+            </ul>
+        </li>
+        <li>Dropdown / Select Menu
+            <ul>
+                <li><strong>“Role”</strong></li>
+                <li>Required field.</li>
+                <li>A dropdown menu listing the available roles fetched from the system (e.g., Admin, User, etc.).</li>
+            </ul>
+        </li>
+        <li>File Upload or URL Input (for image URL)
+            <ul>
+                <li><strong>“Profile Picture”</strong></li>
+                <li>An upload button or URL field that allows users to upload or enter a URL for their profile picture, with a preview box for the image.</li>
+            </ul>
+        </li>
+        <li>(Read-only) Text or Date Display
+            <ul>
+                <li><strong>“Account Created At”</strong></li>
+                <li>Automatically populated field, no input needed. Display this as a timestamp or date.</li>
+            </ul>
+        </li>
+        <li>(Read-only) Text or Date Display
+            <ul>
+                <li><strong>“Last Updated At”</strong></li>
+                <li>Automatically updated field when the user’s information is edited. Display this as a timestamp or date.</li>
+            </ul>
+        </li>
+        <li>Button
+            <ul>
+                <li><strong>“Create Account” / “Save Changes”</strong> (depending on context)</li>
+                <li>A primary action button that submits the form. Ensure it's disabled until all required fields are validated.</li>
+            </ul>
+        </li>
+        <li>(Optional) Button
+            <ul>
+                <li><strong>“Cancel”</strong></li>
+                <li>A secondary action button that cancels the form submission and returns the user to the previous page.</li>
+            </ul>
+        </li>
+        <li>Additional Considerations
+            <ul>
+                <li>Use inline validation messages under each input field for errors like "Username is already taken" or "Invalid email format."</li>
+                <li>Ensure the form is responsive, working well on both desktop and mobile.</li>
+            </ul>
+        </li>
+    </ul>
+        </section>
+        <section id="lab2" class="section" style="display: none;">
+            <div class="container">
+                <h1>User Interface Design Requirements</h1>
+        
+                <div class="subsection">
+                    <h3>Text Input (Single-line)</h3>
+                    <ul>
+                        <li><span class="important">“Username”</span></li>
+                        <li>Must be unique, maximum 255 characters.</li>
+                        <li>A text box with a hint (placeholder) like "Enter your username."</li>
+                    </ul>
+                </div>
+        
+                <div class="subsection">
+                    <h3>Password Input (Single-line with hidden text)</h3>
+                    <ul>
+                        <li><span class="important">“Password”</span></li>
+                        <li>Minimum password strength check, maximum 255 characters.</li>
+                        <li>A text box that hides the text input, with a “Show/Hide” toggle.</li>
+                    </ul>
+                </div>
+        
+                <div class="subsection">
+                    <h3>Email Input</h3>
+                    <ul>
+                        <li><span class="important">“Email Address”</span></li>
+                        <li>Must be a valid email format and unique, maximum 255 characters.</li>
+                        <li>A text box with a placeholder like "Enter your email."</li>
+                    </ul>
+                </div>
+        
+                <div class="subsection">
+                    <h3>(Optional): Text Input (Single-line)</h3>
+                    <ul>
+                        <li><span class="important">“Full Name” (optional)</span></li>
+                        <li>A regular text box, with a placeholder like "Enter your full name."</li>
+                    </ul>
+                </div>
+        
+                <div class="subsection">
+                    <h3>Dropdown / Select Menu</h3>
+                    <ul>
+                        <li><span class="important">“Role”</span></li>
+                        <li>Required field.</li>
+                        <li>A dropdown menu listing the available roles fetched from the system (e.g., Admin, User, etc.).</li>
+                    </ul>
+                </div>
+        
+                <div class="subsection">
+                    <h3>File Upload or URL Input (for image URL)</h3>
+                    <ul>
+                        <li><span class="important">“Profile Picture”</span></li>
+                        <li>An upload button or URL field that allows users to upload or enter a URL for their profile picture, with a preview box for the image.</li>
+                    </ul>
+                </div>
+        
+                <div class="subsection">
+                    <h3>(Read-only): Text or Date Display (Read-only)</h3>
+                    <ul>
+                        <li><span class="important">“Account Created At”</span></li>
+                        <li>Automatically populated field, no input needed. Display this as a timestamp or date.</li>
+                    </ul>
+                </div>
+        
+                <div class="subsection">
+                    <h3>(Read-only): Text or Date Display (Read-only)</h3>
+                    <ul>
+                        <li><span class="important">“Last Updated At”</span></li>
+                        <li>Automatically updated field when the user’s information is edited. Display this as a timestamp or date.</li>
+                    </ul>
+                </div>
+        
+                <div class="subsection">
+                    <h3>Button</h3>
+                    <ul>
+                        <li><span class="important">“Create Account” / “Save Changes”</span> (depending on context)</li>
+                        <li>A primary action button that submits the form. Ensure it's disabled until all required fields are validated.</li>
+                    </ul>
+                </div>
+        
+                <div class="subsection">
+                    <h3>(Optional): Button</h3>
+                    <ul>
+                        <li><span class="important">“Cancel”</span></li>
+                        <li>A secondary action button that cancels the form submission and returns the user to the previous page.</li>
+                    </ul>
+                </div>
+        
+                <div class="subsection">
+                    <h3>Additional Considerations</h3>
+                    <ul>
+                        <li>Use inline validation messages under each input field for errors like "Username is already taken" or "Invalid email format."</li>
+                        <li>Ensure the form is responsive, working well on both desktop and mobile.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="lab3" class="section" style="display: none;">
+            <div class="container">
+                <h1>Chức năng chia sẻ tài liệu học tập cho sinh viên</h1>
+        
+                <p>
+                    Các bạn thể hiện cho cô chức năng: chia sẻ tài liệu học tập cho sinh viên theo môn học. 
+                    Mỗi môn học có thể chia sẻ các tài liệu như Bài giảng / Bài tập / Tài liệu tham khảo.
+                </p>
+        
+                <div class="subsection">
+                    <h2>Yêu cầu:</h2>
+                    <ul>
+                        <li>Chức năng chia sẻ tài liệu cho sinh viên theo từng môn học.</li>
+                        <li>Mỗi môn học có thể chia sẻ các tài liệu như Bài giảng, Bài tập, Tài liệu tham khảo.</li>
+                        <li>Các bạn bỏ toàn bộ file các bạn làm vào thư mục <span class="important">MaSV_HoTen_lab3</span>, nén lại thành file <span class="important">.zip</span> rồi gửi cho cô nhé.</li>
+                    </ul>
+                    <p>Chúc các bạn thực hiện thành công!</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="lab4" class="section" style="display: none;">
+            <div class="image-container">
+                <img src="anhcuoiki/Req1.png" alt="Image 1">
+                <img src="anhcuoiki/Req2.png" alt="Image 2">
+                <img src="anhcuoiki/Req3.png" alt="Image 3">
+                <img src="anhcuoiki/Req4.png" alt="Image 4">
+              </div>
+        </section>
+
+
+        <section id="lab5" class="section" style="display: none;">
+            <div class="image-container">
+                <img src="anhcuoiki/5.Req3 (1).png" alt="Image 1">
+                <img src="anhcuoiki/5.Req4.png" alt="Image 2">
+                <img src="anhcuoiki/5.Req5.png" alt="Image 3">
+              </div>
+              
+        </section>
+
+        <section id="lab6" class="section" style="display: none;">
+            <div class="image-container">
+                <img src="anhcuoiki/6. Req5.png" alt="Image 1">
+                <img src="anhcuoiki/6. Req6.png" alt="Image 2">
+                <img src="anhcuoiki/6. Req7.png" alt="Image 3">
+                <img src="anhcuoiki/6. Req8.png" alt="Image 4">
+              </div>
+        </section>
+    </section>
+
+
+    <section id="design" class="section" style="display: none;">
+        <div class="image-container">
+            <img src="anhcuoiki/anh1.jpg" alt="Image 1">
+            <img src="anhcuoiki/anh2.jpg" alt="Image 2">
+            <img src="anhcuoiki/anh3.jpg" alt="Image 3">
+            <img src="anhcuoiki/anh4.jpg" alt="Image 4">
+          </div>
     </section>
 
     <section id="labs" class="section" style="display: none;">
