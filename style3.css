@@ -19,7 +19,7 @@ body{
 }
 h1{
     font-size: 3vw;
-    color: black;
+    color: white;
 }
 .enter_infor input{
     width: 100%;
@@ -73,11 +73,11 @@ h1{
 }
 .or p{
     font-size: 15px;
-    color: black;
+    color: white;
 }
 .footer p{
     font-size: 13px;
-    color: black;
+    color: white;
 }
 .button_login button:hover{
     background-color: red;
